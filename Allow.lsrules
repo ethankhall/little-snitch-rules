@@ -68,7 +68,14 @@
     "action": "allow",
     "process": "any",
     "remote-domains": ["duckduckgo.com"]
-  },{
+  },
+  {
+    "notes": "Kadi",
+    "action": "allow",
+    "process": "any",
+    "remote-domains": ["kagi.com"]
+  },
+  {
     "notes": "Github",
     "action": "allow",
     "process": "any",
