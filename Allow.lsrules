@@ -57,7 +57,7 @@
     "notes": "BackBlaze Backup service",
     "action": "allow",
     "process": "any",
-    "remote-domains": ["backblaze.com"]
+    "remote-domains": ["backblaze.com", "backblazeb2.com"]
   },{
     "notes": "Bitbucket",
     "action": "allow",
