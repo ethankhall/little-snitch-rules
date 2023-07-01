@@ -1,116 +1,229 @@
 {
-  "description" : "Ethan's Global Allow Rules.",
-  "name" : "Ethan's Global Allow Rules",
-  "rules" : [{
-    "notes": "NextDNS",
-    "action": "allow",
-    "ports": "53",
-    "remote-addresses": ["45.90.28.86", "45.90.30.86", "2a07:a8c0::39:5ffc", "2a07:a8c1::39:5ffc"]
-  },
-  {
-    "notes": "NextDNS",
-    "action": "allow",
-    "ports": "443",
-    "remote-domains": ["nextdns.io"]
-  },
-  {
-    "notes": "Cloudflare DNS",
-    "action": "allow",
-    "ports": "53",
-    "remote-addresses": ["1.1.1.1", "1.0.0.1"]
-  },
-  {
-    "notes": "HTTP Lookup Tools",
-    "action": "allow",
-    "ports": "80",
-    "priority": "high",
-    "remote-domains": ["ifconfig.co"]
-  },
-  {
-    "notes": "HTTPS Lookup Tools",
-    "action": "allow",
-    "ports": "443",
-    "priority": "high",
-    "remote-domains": ["ifconfig.co"]
-  },
-  {
-    "notes": "1Password",
-    "action" : "allow",
-    "ports" : "443",
-    "protocol" : "tcp",
-    "remote-domains" : ["1password.ca", "1password.com", "1password.eu", "1passwordusercontent.com", "agilebits.com"]
-  },
-  {
-    "notes": "Akamai",
-    "action" : "allow",
-    "ports" : "443",
-    "protocol" : "tcp",
-    "remote-domains" : ["akamaized.net"]
-  },
-  {
-    "notes": "Apple (other)",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["apple.news","edgesuite.net","icloud.com", "mac.com"]
-  },
-  {
-    "notes": "BackBlaze Backup service",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["backblaze.com", "backblazeb2.com"]
-  },{
-    "notes": "Bitbucket",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["bitbucket.org"]
-  },{
-    "notes": "Duckduckgo",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["duckduckgo.com"]
-  },
-  {
-    "notes": "Kadi",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["kagi.com"]
-  },
-  {
-    "notes": "Github",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["github.com","githubassets.com","githubusercontent.com"]
-  },
-{
-    "notes": "ProtonMail",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["protonmail.com", "proton.me"]
-  },
-{
-    "notes": "Google",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["googleapis.com", "google.com","gvt1.com"]
-  },{
-    "notes": "Microsoft",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["azurewebsites.net","live.com","lync.com","microsoft.com","microsoftonline.com","msftauth.net","msftauthimages.net","msn.com","oaspapps.com","office.com","office.net","office365.com","outlook.com","sharepoint.com","skype.com","windows.net"]
-  },{
-    "notes": "Opaq",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["opaq.com", "opaqnetworks.com", "opaqnetworks.net", "fourvdev.com"]
-  },{
-    "notes": "Pwned Passwords",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["pwnedpasswords.com"]
-  },{
-    "notes": "Weather",
-    "action": "allow",
-    "process": "any",
-    "remote-domains": ["weather.com", "wunderground.com"]
-  }]
+  "description": "Ethan's Global Allow Rules.",
+  "name": "Ethan's Global Allow Rules",
+  "rules": [
+    {
+      "notes": "NextDNS",
+      "action": "allow",
+      "ports": "53",
+      "remote-addresses": [
+        "45.90.28.86",
+        "45.90.30.86",
+        "2a07:a8c0::39:5ffc",
+        "2a07:a8c1::39:5ffc"
+      ]
+    },
+    {
+      "notes": "NextDNS",
+      "action": "allow",
+      "ports": "443",
+      "remote-domains": [
+        "nextdns.io"
+      ]
+    },
+    {
+      "notes": "Cloudflare DNS",
+      "action": "allow",
+      "ports": "53",
+      "remote-addresses": [
+        "1.1.1.1",
+        "1.0.0.1"
+      ]
+    },
+    {
+      "notes": "HTTP Lookup Tools",
+      "action": "allow",
+      "ports": "80",
+      "priority": "high",
+      "remote-domains": [
+        "ifconfig.co"
+      ]
+    },
+    {
+      "notes": "HTTPS Lookup Tools",
+      "action": "allow",
+      "ports": "443",
+      "priority": "high",
+      "remote-domains": [
+        "ifconfig.co"
+      ]
+    },
+    {
+      "notes": "1Password",
+      "action": "allow",
+      "ports": "443",
+      "protocol": "tcp",
+      "remote-domains": [
+        "1password.ca",
+        "1password.com",
+        "1password.eu",
+        "1passwordusercontent.com",
+        "agilebits.com"
+      ]
+    },
+    {
+      "notes": "Akamai",
+      "action": "allow",
+      "ports": "443",
+      "protocol": "tcp",
+      "remote-domains": [
+        "akamaized.net",
+        "akadns.net"
+      ]
+    },
+    {
+      "notes": "Apple (other)",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "apple.news",
+        "edgesuite.net",
+        "icloud.com",
+        "mac.com"
+      ]
+    },
+    {
+      "notes": "BackBlaze Backup service",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "backblaze.com",
+        "backblazeb2.com"
+      ]
+    },
+    {
+      "notes": "Bitbucket",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "bitbucket.org"
+      ]
+    },
+    {
+      "notes": "Duckduckgo",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "duckduckgo.com"
+      ]
+    },
+    {
+      "notes": "Kadi",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "kagi.com"
+      ]
+    },
+    {
+      "notes": "Github",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "github.com",
+        "githubassets.com",
+        "githubusercontent.com"
+      ]
+    },
+    {
+      "notes": "ProtonMail",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "protonmail.com",
+        "proton.me"
+      ]
+    },
+    {
+      "notes": "Google",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "googleapis.com",
+        "google.com",
+        "gvt1.com"
+      ]
+    },
+    {
+      "notes": "Microsoft",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "azureedge.net",
+        "azurewebsites.net",
+        "live.com",
+        "lync.com",
+        "microsoft.com",
+        "microsoftonline.com",
+        "msecnd.net",
+        "msftauth.net",
+        "msftauthimages.net",
+        "msn.com",
+        "oaspapps.com",
+        "office.com",
+        "office.net",
+        "office365.com",
+        "outlook.com",
+        "sharepoint.com",
+        "skype.com",
+        "visualstudio.com",
+        "vsassets.io",
+        "windows.net"
+      ]
+    },
+    {
+      "notes": "Opaq",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "opaq.com",
+        "opaqnetworks.com",
+        "opaqnetworks.net",
+        "fourvdev.com"
+      ]
+    },
+    {
+      "notes": "Pwned Passwords",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "pwnedpasswords.com"
+      ]
+    },
+    {
+      "notes": "Weather",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "weather.com",
+        "wunderground.com"
+      ]
+    },
+    {
+      "notes": "Paddle",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "paddle.com",
+        "paddleapi.com"
+      ]
+    },
+    {
+      "notes": "Digitial Ocean",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "digitaloceanspaces.com",
+        "digitalocean.com"
+      ]
+    },
+    {
+      "notes": "Misc",
+      "action": "allow",
+      "process": "any",
+      "remote-domains": [
+        "gravatar.com"
+      ]
+    }
+  ]
 }

@@ -1,30 +1,59 @@
 {
-  "description" : "Deny Rules",
-  "name" : "Ethan's Global Deny Rules",
-  "rules" : [{
-    "notes": "Trackers",
-    "action": "deny",
-    "process": "any",
-    "remote-domains": ["luckyorange.com","googletagmanager.com","segment.io","subscribers.com","ptengine.com","tritondigital.com"]
-  },{
-    "notes": "Useless Crash and Metrics reporting",
-    "action": "deny",
-    "process": "any",
-    "remote-domains": ["crashlytics.com","sentry.io"]
-  },{
-    "notes": "Ad services (not caught by Peter Lowe's list)",
-    "action": "deny",
-    "process": "any",
-    "remote-domains": ["addtoany.com","adxcel.com","consensu.org","onetrust.com"]
-  },{
-    "notes": "Shady / Generally Unknown",
-    "action": "deny",
-    "process": "any",
-    "remote-domains": ["pndsn.com","rec-engine.com","sail-personalize.com","sail-track.com"]
-  },{
-    "notes": "Marketing Crap",
-    "action": "deny",
-    "process": "any",
-    "remote-domains": ["bazaarvoice.com","braze.com"]
-  }]
+  "description": "Deny Rules",
+  "name": "Ethan's Global Deny Rules",
+  "rules": [
+    {
+      "notes": "Trackers",
+      "action": "deny",
+      "process": "any",
+      "remote-domains": [
+        "luckyorange.com",
+        "googletagmanager.com",
+        "segment.io",
+        "subscribers.com",
+        "ptengine.com",
+        "tritondigital.com"
+      ]
+    },
+    {
+      "notes": "Useless Crash and Metrics reporting",
+      "action": "deny",
+      "process": "any",
+      "remote-domains": [
+        "crashlytics.com",
+        "sentry.io"
+      ]
+    },
+    {
+      "notes": "Ad services (not caught by Peter Lowe's list)",
+      "action": "deny",
+      "process": "any",
+      "remote-domains": [
+        "addtoany.com",
+        "adxcel.com",
+        "consensu.org",
+        "onetrust.com"
+      ]
+    },
+    {
+      "notes": "Shady / Generally Unknown",
+      "action": "deny",
+      "process": "any",
+      "remote-domains": [
+        "pndsn.com",
+        "rec-engine.com",
+        "sail-personalize.com",
+        "sail-track.com"
+      ]
+    },
+    {
+      "notes": "Marketing Crap",
+      "action": "deny",
+      "process": "any",
+      "remote-domains": [
+        "bazaarvoice.com",
+        "braze.com"
+      ]
+    }
+  ]
 }
