@@ -22,7 +22,7 @@
       "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
       "remote-addresses": [
         "0.0.0.0/0",
-        "::"
+        "::/0"
       ]
     },
     {
