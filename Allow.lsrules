@@ -2,6 +2,26 @@
   "description": "Ethan's Global Allow Rules.",
   "name": "Ethan's Global Allow Rules",
   "rules": [
+  {
+      "notes": "TailScale IPs",
+      "action": "allow",
+      "owner" : "any",
+      "ports": "any",
+      "direction" : "both",
+      "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
+      "remote-addresses": [
+        "0.0.0.0/0",
+        "::/0"
+      ]
+    },
+    {
+      "notes": "TailScale",
+      "action" : "allow",
+      "owner" : "any",
+      "ports": "any",
+      "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
+      "remote" : "any"
+    },
     {
       "notes": "NextDNS",
       "action": "allow",
@@ -12,20 +32,6 @@
         "2a07:a8c0::39:5ffc",
         "2a07:a8c1::39:5ffc"
       ]
-    },
-    {
-      "notes": "TailScale IPs",
-      "action" : "allow",
-      "direction" : "both",
-      "ports" : "0",
-      "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
-      "remote-addresses" : "*.*.*.*, *:*:*:*:*:*:*:*"
-    },
-    {
-      "notes": "TailScale",
-      "action" : "allow",
-      "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
-      "remote" : "any"
     },
     {
       "notes": "NextDNS",
