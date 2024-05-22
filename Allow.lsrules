@@ -20,7 +20,10 @@
       "owner" : "any",
       "ports": "any",
       "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
-      "remote" : "any"
+      "remote-domains" : [
+        "tailscale.com",
+        "tailscale.io"
+      ]
     },
     {
       "notes": "NextDNS",
