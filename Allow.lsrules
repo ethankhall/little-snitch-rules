@@ -14,17 +14,19 @@
       ]
     },
     {
-      "notes": "TailScale",
-      "action": "allow",
-      "owner" : "any",
-      "ports": "any",
+      "notes": "TailScale IPs",
+      "action" : "allow",
       "direction" : "both",
+      "ports" : "0",
       "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
-      "remote-addresses": [
-        "0.0.0.0/0",
-        "::/0"
-      ]
+      "remote-addresses" : "*.*.*.*, *:*:*:*:*:*:*:*"
     },
+    {
+      "notes": "TailScale",
+      "action" : "allow",
+      "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
+      "remote" : "any"
+    }
     {
       "notes": "NextDNS",
       "action": "allow",
