@@ -26,7 +26,7 @@
       "action" : "allow",
       "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
       "remote" : "any"
-    }
+    },
     {
       "notes": "NextDNS",
       "action": "allow",
