@@ -8,6 +8,7 @@
       "owner" : "any",
       "ports": "any",
       "direction" : "both",
+      "priority": "high",
       "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
       "remote-addresses": [
         "0.0.0.0/0",
@@ -19,6 +20,7 @@
       "action" : "allow",
       "owner" : "any",
       "ports": "any",
+      "priority": "high",
       "process" : "identifier.W5364U7YZB\/io.tailscale.ipn.macos.network-extension",
       "remote-domains" : [
         "tailscale.com",
